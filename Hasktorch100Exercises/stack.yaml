@@ -1,0 +1,24 @@
+resolver: lts-15.5
+
+compiler: ghc-8.8.4
+
+flags: {}
+
+extra-include-dirs:
+  - /Users/sora/.local/lib/hasktorch/deps/libtorch/include
+  - /Users/sora/.local/lib/hasktorch/deps/libtorch/include/torch/csrc/api/include
+  - /Users/sora/.local/lib/hasktorch/deps/mklml/include
+extra-lib-dirs:
+  - /Users/sora/.local/lib/hasktorch/deps/libtorch/lib
+  - /Users/sora/.local/lib/hasktorch/deps/mklml/lib
+extra-deps:
+  - /Users/sora/.local/lib/hasktorch/codegen
+  - /Users/sora/.local/lib/hasktorch/libtorch-ffi
+  - /Users/sora/.local/lib/hasktorch/libtorch-ffi-helper
+  - /Users/sora/.local/lib/hasktorch/hasktorch
+  - /Users/sora/hasktorch-tools
+  - ghc-parser-0.2.2.0@sha256:a8ca5ecc83ec59c998d566c547eb0addf69330744c42eafb4c774c0ce8d93883,1190
+  - ipython-kernel-0.10.2.1@sha256:3a2ba95eb65be03d8c548d8afacfed52d9acc49e357065c25e77816358093c19,2834
+  - ihaskell-0.10.1.2@sha256:2e70fc8bafc1bf8fa9df5c903bee894fc4e89f2d22a195519800b9dcb4cbc724,6501
+  - git: git@github.com:DaisukeBekki/juman-tools.git
+    commit: 4912fb58d3b45d5f996c7faf277668c294f473ec
