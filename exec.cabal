@@ -1,10 +1,10 @@
 cabal-version: 2.2
 
--- This file has been generated from package.yaml by hpack version 0.37.0.
+-- This file has been generated from package.yaml by hpack version 0.38.0.
 --
 -- see: https://github.com/sol/hpack
 
-name:           helloworld
+name:           exec
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/githubuser/helloworld#readme>
 homepage:       https://github.com/githubuser/helloworld#readme
@@ -13,55 +13,40 @@ author:         Author name here
 maintainer:     example@example.com
 copyright:      2025 Author name here
 license:        BSD-3-Clause
-license-file:   LICENSE
 build-type:     Simple
-extra-source-files:
-    README.md
-    CHANGELOG.md
 
 source-repository head
   type: git
   location: https://github.com/githubuser/helloworld
 
-library
-  exposed-modules:
-      Lib
+executable session-3-graduate-admission-linear
+  main-is: GraduateAdmissionLinear.hs
   other-modules:
-      Paths_helloworld
+      Data
+      LinearRegression
+      Paths_exec
   autogen-modules:
-      Paths_helloworld
+      Paths_exec
   hs-source-dirs:
-      src
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
-  build-depends:
-      base >=4.7 && <5
-  default-language: Haskell2010
-
-executable helloworld-exe
-  main-is: Main.hs
-  other-modules:
-      Paths_helloworld
-  autogen-modules:
-      Paths_helloworld
-  hs-source-dirs:
-      app
+      Session3
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , helloworld
+    , bytestring
+    , cassava
+    , hasktorch
+    , text
+    , vector
   default-language: Haskell2010
 
-test-suite helloworld-test
-  type: exitcode-stdio-1.0
-  main-is: Spec.hs
+executable session3-linear-regression
+  main-is: Session3/LinearRegression.hs
   other-modules:
-      Paths_helloworld
+      Paths_exec
   autogen-modules:
-      Paths_helloworld
-  hs-source-dirs:
-      test
+      Paths_exec
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , helloworld
+    , hasktorch
   default-language: Haskell2010

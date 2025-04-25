@@ -1,0 +1,66 @@
+name:                exec
+version:             0.1.0.0
+github:              "githubuser/helloworld"
+license:             BSD-3-Clause
+author:              "Author name here"
+maintainer:          "example@example.com"
+copyright:           "2025 Author name here"
+
+# Commentez ces lignes puisque ces fichiers n'existent pas
+# extra-source-files:
+# - README.md
+# - CHANGELOG.md
+
+description:         Please see the README on GitHub at <https://github.com/githubuser/helloworld#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- hasktorch
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+# Commentez cette section puisque le dossier src n'existe pas
+# library:
+#   source-dirs: src
+
+executables:
+  # Vous pouvez commenter cette section si vous n'avez pas de Main.hs dans un dossier app
+  # helloworld-exe:
+  #   main:                Main.hs
+  #   source-dirs:         app
+  #   ghc-options:
+  #   - -threaded
+  #   - -rtsopts
+  #   - -with-rtsopts=-N
+  #   dependencies:
+  #   - helloworld
+  
+  session3-linear-regression:
+    main:               Session3/LinearRegression.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+
+  session-3-graduate-admission-linear:
+    main-is:            GraduateAdmissionLinear.hs
+    hs-source-dirs: Session3
+    dependencies:
+    - base >= 4.7 && < 5
+    - bytestring
+    - cassava
+    - vector
+    - text
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N

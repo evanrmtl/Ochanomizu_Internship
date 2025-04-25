@@ -48,4 +48,6 @@ cabal.project.local~
 
 .DS_Store
 
+data/
+
 # End of https://www.toptal.com/developers/gitignore/api/haskell,visualstudiocode
