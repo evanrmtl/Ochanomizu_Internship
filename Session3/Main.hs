@@ -1,4 +1,5 @@
-module LinearRegression (linear, cost, calculateNewA, calculateNewB, train) where
+module Main where
+
 
 import Torch.Tensor (Tensor, asTensor, asValue)
 import Torch.Functional (matmul, mul, add, transpose2D, sumAll)

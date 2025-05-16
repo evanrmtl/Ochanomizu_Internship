@@ -16,6 +16,8 @@ description:         Please see the README on GitHub at <https://github.com/gith
 dependencies:
 - base >= 4.7 && < 5
 - hasktorch
+- nlp-tools
+- hasktorch-tools
 
 ghc-options:
 - -Wall
@@ -46,14 +48,20 @@ executables:
   
   session3-linear-regression:
     main:               Session3/LinearRegression.hs
+    dependencies:
+    - base >= 4.7 && < 5
+    - bytestring
+    - cassava
+    - vector
+    - text
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
 
   session-3-graduate-admission-linear:
-    main-is:            GraduateAdmissionLinear.hs
-    hs-source-dirs: Session3
+    main:               GraduateAdmissionLinear.hs
+    source-dirs:        Session3
     dependencies:
     - base >= 4.7 && < 5
     - bytestring
@@ -74,6 +82,28 @@ executables:
 
   session4-XorGate:
     main:             Session4/MlpXor.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+
+  session5-evaluation:
+    main:             Session5/eval/Evaluation.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+
+  session5-admit:
+    main:               Admit.hs
+    source-dirs:        
+    - Session5
+    dependencies:
+    - base >= 4.7 && < 5
+    - bytestring
+    - cassava
+    - vector
+    - text
     ghc-options:
     - -threaded
     - -rtsopts

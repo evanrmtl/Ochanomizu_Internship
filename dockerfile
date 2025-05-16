@@ -12,6 +12,7 @@ RUN mv ./hasktorch ./inline-c ./dist-newstyle ./libraries/
 WORKDIR /home/ubuntu/libraries
 RUN git clone https://github.com/DaisukeBekki/hasktorch-tools.git
 RUN git clone https://github.com/DaisukeBekki/nlp-tools.git
+RUN sudo apt update -y && sudo apt install -y gnuplot
 
 WORKDIR /home/ubuntu/libraries/hasktorch-tools
 # for stack run
