@@ -51,4 +51,9 @@ exec.cabal
 
 data/
 
+curve/
+curve2/
+curve3/
+curve4/
+
 # End of https://www.toptal.com/developers/gitignore/api/haskell,visualstudiocode
